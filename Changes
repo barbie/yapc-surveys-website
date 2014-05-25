@@ -1,5 +1,9 @@
 Changes for the YAPC Conference Surveys website
 
+1.08	09/06/2012
+	- XHTML fixes.
+	- WAI improvements to index and about pages.
+
 1.07	25/03/2012
 	- added ilpw2012 and gpw2012 results and images.
 	- updated results for ye2009 and lpw2011.

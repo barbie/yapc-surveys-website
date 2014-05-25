@@ -117,6 +117,17 @@ body {
 	font-family: Georgia, "Times New Roman",Times, serif ;
 }
 
+.quotes1 a:link, a:visited, a:active {
+	color : #000000;
+	text-decoration : none; 
+	background-color : transparent;
+} 
+.quotes1 a:hover {
+	color : #4D6A7A;
+	text-decoration : none; 
+	background-color : transparent; 
+} 
+
 .corona {
 	background: transparent; 
 	margin:0 auto 0 auto;

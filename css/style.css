@@ -220,7 +220,7 @@ table {
 	border-spacing: 2px;
 	border-collapse: collapse;
 	empty-cells:show;
-	margin:5px 10px;
+	margin:0px 10px 5px 10px;
 }
 
 tr {
@@ -284,17 +284,13 @@ td {
 }
 
 .blurb{
-    float: left;
+  float: left;
 	width: 220px;
 	margin: 10px 12px 5px 6px;
 	padding: 9px;
-	border-left: 1px solid #aaa;
-    border-top: 1px solid #aaa;
-    border-bottom: 1px solid #aaa;
-    border-right: 1px solid #aaa;
+	border: 1px solid #aaa;
 	background: #E7ECF2;
 }
-
 
 .blurb ul {
 	list-style-type: square;
@@ -317,7 +313,6 @@ td {
 }
 
 
-
 div.credit {
 	text-align: right;
 	margin: 0 50px 0 0;
@@ -326,7 +321,7 @@ div.credit {
 	padding: 3px;
 }
 
-div.credit a{
+div.credit a {
 	color:#999999;
 }
 
@@ -354,20 +349,89 @@ div.credit a{
 .botsmall a:hover {color : #000000;} 
 
 .linkcent {
-    text-align: center;
-    margin: 15px 0 8px 0;
-    font-size: 110%;
-    font-weight: bold;
+  text-align: center;
+  margin: 15px 0 8px 0;
+  font-size: 110%;
+  font-weight: bold;
 }
-
 
 .number {
 	text-align: right;
 	width: 80px;
 }
 
-div#commentBlock
-{
+div#commentBlock {
 	margin: 0px;
 	display: none;
 }
+
+.noevent {
+  text-align: center;
+}
+
+.tabblock { }
+
+#tabset1 {
+    display: block;
+    overflow: auto;
+}
+
+#tabset2 {
+    margin:0;
+    padding: 5px 5px 0 5px;
+    font-size: 1em;
+    line-height:2em;
+}
+
+#tabset2 ul {
+    margin:0;
+    padding:0 0 0 0px;
+    list-style:none;
+}
+
+#tabset2 li {
+    float:left;
+    margin:0;
+    padding: 0 0px 0 0;
+    list-style:none;
+    width: 120px;
+    text-align: center;
+}
+
+#tabset2 li.current {
+    background:     #fff;
+    border-left:    1px solid #333;
+    border-top:     1px solid #333;
+    border-right:   1px solid #333;
+    font-weight:    bold;
+}
+
+#tabset2 a {
+    padding-top:        1px;
+    display:            block;
+    text-decoration:    none;
+    color:              #000080;
+    background-color:   #F5F5F5;
+    border-left:    1px solid #cccccc;
+    border-top:     1px solid #cccccc;
+    border-right:   1px solid #cccccc;
+}
+#tabset2 li.current a {
+    padding-top:        0px;
+    background:         #fff;
+    color:              #000;
+    border-left:    1px solid #333;
+    border-top:     1px solid #333;
+    border-right:   1px solid #333;
+}
+#tabset2 li.first { margin-left: 5px; }
+
+#tabset2 a:hover { background-color: #333; color: #fff; }
+.viewblock  {}
+
+.tabbody    { padding-top: 0px; margin-top: 0px; }
+
+div#tab1    { display: block; }
+div#tab2    { display: none; }
+div#tab3    { display: none; }
+div#tab4    { display: none; }

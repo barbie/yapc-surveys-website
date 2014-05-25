@@ -2,14 +2,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="Content-Language" content="en" />
+  <meta http-equiv="X-UA-Compatible"      content="IE=7" />
+  <meta http-equiv="Content-Type"         content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Style-Type"   content="text/css" />
+  <meta http-equiv="Content-Script-Type"  content="text/javascript" />
 
 	<title>Survey Listings - YAPC Conference Surveys</title>
 	<link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
 
-	<!-- CSS stylesheets -->
+  <!-- CSS Stylesheets -->
   <link rel="stylesheet"    type="text/css"  href="/css/style.css" />
+
+  <!-- Javascript -->
+  <script type="text/javascript" src="/js/prototype.js"></script>
+  <script type="text/javascript" src="/js/surveys.js"></script>
 
 <!--
 
@@ -45,10 +51,13 @@ pageTracker._trackPageview();
 			<b class="top"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b><b class="b5"></b></b>
 
 			<div class="float-right">
-				<h2 class="noprint">Future Events:</h2>
+				<h2 class="noprint">Future Survey Events:</h2>
 				<ul>
-				<li><span class="black"><a href="http://yapc2010.com/yn2010/">2010 YAPC::NA</a> - Columbus, OH, USA</span></li>
-				<li><span class="black"><a href="http://conferences.yapceurope.org/ye2010/">2010 YAPC::Europe</a> - Pisa, Italy</span></li>
+				<li><span class="black"><a href="http://www.yapcna.org/">2012 YAPC::NA</a> - Madison, WI, USA</span></li>
+				<li><span class="black"><a href="http://yapc2012.de/">2012 YAPC::Europe</a> - Frankfurt, Germany</span></li>
+				<li><span class="black"><a href="http://conferences.yapceurope.org/gpw2012/">German Perl Workshop 2012</a> - Erlangen, German</span></li>
+				<li><span class="black">Pittsburgh Perl Workshop 2012 - Pittsburgh, PA, USA</span></li>
+				<li><span class="black">London Perl Workshop 2012 - London, UK</span></li>
 				</ul>
 			</div>
 
@@ -57,17 +66,31 @@ pageTracker._trackPageview();
 				<h1>About</h1>
 				<p>Welcome to the YAPC Conference Surveys site. This site aims to be a central 
 				repository for the results of conference surveys that have been taken by 
-				attendees of the Yet Another Perl Conference series. Currently only YAPC::Europe
-        and YAPC::NA events have used this survey system, but this may be expanded 
-				further in the future.</p>
+				attendees of the Yet Another Perl Conference series and Perl Workshops. 
+        Hopefully the popularity of surveys will be used for other events in the future.</p>
 				<p>If you have feedback or questions regarding the individual surveys or this 
 				survey site, please direct email to <a href="mailto:barbie@cpan.org">Barbie</a>.
 
 				<h1>The Results</h1>
 
+        <div id="tabblock">
+        <div id="tabset1">
+        <div id="tabset2">
+          <ul>
+          <li id="litab1" class="first current"><a href="javascript:ShowTab('tab1');" title="YAPC Events">YAPC Events</a></li>
+          <li id="litab2"><a href="javascript:ShowTab('tab2');" title="Perl Workshops">Perl Workshops</a></li>
+          <li id="litab3"><a href="javascript:ShowTab('tab3');" title="Other Events">Other Events</a></li>
+          </ul>
+        </div>
+        </div>
+
+        <div id="tabbody">
+        <div id="tab1" class="viewblock">
 				<table>
-				<tr><th>Year</th><th>Conference</th><th>Location</th><th>Survey Results</th><th>Feedback</th><th>Raw Data</th></tr>
-				<tr><td>2010</td><td><a href="http://conferences.yapceurope.org/ye2010/">YAPC::Europe</a></td><td>Pisa, Italy</td><td>-</td><td>-</td><td>-</td></tr>
+				<tr><th>Year</th><th>Event</th><th>Location</th><th>Survey Results</th><th>Feedback</th><th>Raw Data</th></tr>
+				<tr><td>2011</td><td><a href="http://yapceurope.lv/ye2011/">YAPC::Europe</a></td><td>Riga, Latvia</td><td><a href="html/ye2011-survey.html">HTML</a></td><td>-</td><td>-</td></tr>
+				<tr><td>2011</td><td><a href="http://www.yapc2011.us/yn2011/">YAPC::NA</a></td><td>Ashville, NC, USA</td><td><a href="html/yn2011-survey.html">HTML</a></td><td>-</td><td>-</td></tr>
+				<tr><td>2010</td><td><a href="http://conferences.yapceurope.org/ye2010/">YAPC::Europe</a></td><td>Pisa, Italy</td><td><a href="html/ye2010-survey.html">HTML</a></td><td>-</td><td>-</td></tr>
 				<tr><td>2010</td><td><a href="http://yapc2010.com/yn2010/">YAPC::NA</a></td><td>Columbus, OH, USA</td><td><a href="html/yn2010-survey.html">HTML</a></td><td>-</td><td>-</td></tr>
         <tr><td>2009</td><td><a href="http://yapceurope.org/2009">YAPC::Europe</a></td><td>Lisbon, Portugal</td><td><a href="html/ye2009-survey.html">HTML</a></td><td>-</td><td>-</td></tr>
 				<tr><td>2009</td><td><a href="http://yapc10.org">YAPC::NA</a></td><td>Pittsburgh, PA, USA</td><td><a href="html/yn2009-survey.html">HTML</a></td><td>-</td><td>-</td></tr>
@@ -75,6 +98,25 @@ pageTracker._trackPageview();
 				<tr><td>2007</td><td><a href="http://yapceurope.org/2007">YAPC::Europe</a></td><td>Vienna, Austria</td><td><a href="docs/ye2007-survey.pdf">PDF</a></td><td><a href="docs/ye2007-feedback.pdf">PDF</a></td><td>-</td></tr>
 				<tr><td>2006</td><td><a href="http://yapceurope.org/2006">YAPC::Europe</a></td><td>Birmingham, UK</td><td><a href="docs/yapceurope-survey2006.pdf">PDF</a></td><td><a href="docs/yapceurope-feedback2006.pdf">PDF</a></td><td>-</td></tr>
 				</table>
+        </div>
+
+        <div id="tab2" class="viewblock">
+				<table>
+				<tr><th>Year</th><th>Event</th><th>Location</th><th>Survey Results</th><th>Feedback</th><th>Raw Data</th></tr>
+				<tr><td>2011</td><td><a href="http://yapceurope.lv/ye2011/">London PW</a></td><td>London, UK</td><td>HTML</td><td>-</td><td>-</td></tr>
+				<tr><td>2011</td><td><a href="http://yapceurope.lv/ye2011/">German PW</a></td><td>Frankfurt, Germany</td><td><a href="html/gpw2011-survey.html">HTML</a></td><td>-</td><td>-</td></tr>
+				<tr><td>2011</td><td><a href="http://yapceurope.lv/ye2011/">Pittsburgh PW</a></td><td>Pittsburgh, PA, USA</td><td><a href="html/ppw2011-survey.html">HTML</a></td><td>-</td><td>-</td></tr>
+				</table>
+        </div>
+
+        <div id="tab3" class="viewblock">
+				<table>
+				<tr><th>Year</th><th>Event</th><th>Location</th><th>Survey Results</th><th>Feedback</th><th>Raw Data</th></tr>
+        <tr><td colspan="6" class="noevent">No events listed</td></tr>
+				</table>
+        </div>
+        </div>
+        </div>
 
 				<div class="blurb"><span class="bkbig">Other Sites:</span><br/>
 					<ul>
@@ -82,10 +124,8 @@ pageTracker._trackPageview();
 					  <li><span class="black"><a href="http://www.yapceurope.org">YAPC::Europe Foundation</a></span></li> 
 					  <li><span class="black"><a href="http://www.yapc.org/">YAPC Events</a></span></li> 
 					  <li><span class="black"><a href="http://www.perl.org/events.html">Perl Events</a></span></li> 
-            
 					  <li><span class="black"><a href="http://blogs.perl.org/">Perl Blogs</a></span></li>  
 					  <li><span class="black"><a href="http://www.perlbuzz.com/">Perl Buzz</a></span></li>  
-					  <li><span class="black"><a href="http://use.perl.org/">Use Perl</a></span></li> 
 					</ul>
 				</div>
 
@@ -108,7 +148,7 @@ pageTracker._trackPageview();
 	<div id="copyright">
 		<a href="http://creativecommons.org/licenses/by-sa/3.0"><img src="images/cc-by-sa.png" alt="Creative Commons Attribution Share Alike" align="left" /></a>
 		<p>Except where explicitly stated within the individual documents, all survey data and documents are considered copyright of The Perl Foundation and may be used under a <a href="http://creativecommons.org/licenses/by-sa/3.0">Creative Commons Attribution Share Alike</a> license.</p>
-    <p>Site hosted by <a href="http://birmingham.pm.org">Birmingham Perl Mongers</a>. Data copyright 2006-2010 <a href="http://www.perlfoundation.org">The Perl Foundation</a></p>
+        <p>Site hosted by <a href="http://birmingham.pm.org">Birmingham Perl Mongers</a>. Data copyright 2006-2011 <a href="http://www.perlfoundation.org">The Perl Foundation</a></p>
 	</div>
 </div>	
 </body>

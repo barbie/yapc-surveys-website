@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               surveys
-version:            1.06
+version:            1.07
 abstract:           YAPC Conference Surveys
 author:
     - Barbie <barbie@cpan.org>

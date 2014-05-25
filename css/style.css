@@ -207,7 +207,7 @@ body {
 }
 
 .corona .boxcontent ol {
-	margin:5px 10px;
+	margin:5px 10px 5px 25px;
 }
 
 .corona .boxcontent ol li {
@@ -285,8 +285,8 @@ td {
 
 .blurb{
   float: left;
-	width: 220px;
-	margin: 10px 12px 5px 6px;
+	width: 235px;
+	margin: 10px 12px 5px 10px;
 	padding: 9px;
 	border: 1px solid #aaa;
 	background: #E7ECF2;
@@ -298,7 +298,7 @@ td {
 	position:relative;
 	font-weight: bold;
 	padding: 10px 0 0 17px;
-	margin-left: 0;
+	margin-left: 0px;
 	margin-top: 0px;
 }
 

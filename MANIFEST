@@ -7,8 +7,12 @@ docs/ye2006-survey.pdf
 docs/ye2007-feedback.pdf
 docs/ye2007-survey.pdf
 docs/ye2008-feedback.pdf
+docs/yn2009-feedback.pdf
 docs/ye2009-feedback.pdf
+docs/yn2010-feedback.pdf
 docs/ye2010-feedback.pdf
+docs/ye2011-feedback.pdf
+docs/yn2011-feedback.pdf
 html/gpw2011-images/qu00000.png
 html/gpw2011-images/qu00000-thumb.png
 html/gpw2011-images/qu00002.png
@@ -179,4 +183,16 @@ html/yn2012-images/qu00005.png
 html/yn2012-images/qu00007-thumb.png
 html/yn2012-images/qu00007.png
 html/yn2012-survey.html
-META.yml                                 Module meta-data (added by MakeMaker)
+html/ye2012-images/qu00000-thumb.png
+html/ye2012-images/qu00000.png
+html/ye2012-images/qu00002-thumb.png
+html/ye2012-images/qu00002.png
+html/ye2012-images/qu00003-thumb.png
+html/ye2012-images/qu00003.png
+html/ye2012-images/qu00005-thumb.png
+html/ye2012-images/qu00005.png
+html/ye2012-images/qu00007-thumb.png
+html/ye2012-images/qu00007.png
+html/ye2012-survey.html
+META.yml                                 Module YAML meta-data (added by MakeMaker)
+META.json                                Module JSON meta-data (added by MakeMaker)

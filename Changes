@@ -1,43 +1,47 @@
 Changes for the YAPC Conference Surveys website
 
-1.10	11/11/2012
-	- added ye2012 results and images.
-	- added yn2009, yn2010, yn2011 & ye2011 feedback documents.
+1.11    2013-06-17
+        - added lpw2012 and gpw2013 results and images.
+        - updated copyright.
 
-1.09	31/07/2012
-	- added yn2012 results and images.
+1.10	2012-11-11
+        - added ye2012 results and images.
+        - added yn2009, yn2010, yn2011 & ye2011 feedback documents.
 
-1.08	09/06/2012
-	- XHTML fixes.
-	- WAI improvements to index and about pages.
+1.09	2012-07-31
+        - added yn2012 results and images.
 
-1.07	25/03/2012
-	- added ilpw2012 and gpw2012 results and images.
-	- updated results for ye2009 and lpw2011.
-	- added the Taking the Surveys page.
-	- added EPO as a linked site.
+1.08	2012-06-09
+        - XHTML fixes.
+        - WAI improvements to index and about pages.
 
-1.06	04/03/2012
-	- added feedback documents for ye2008, ye2009, ye2010
-	- changed file names for ye2006.
-	- added Israeli Perl Workshop 2012 (ilpw2012) to list.
+1.07	2012-03-25
+        - added ilpw2012 and gpw2012 results and images.
+        - updated results for ye2009 and lpw2011.
+        - added the Taking the Surveys page.
+        - added EPO as a linked site.
 
-1.05	06/02/2012
-	- added lpw2011 results and images
+1.06	2012-03-04
+        - added feedback documents for ye2008, ye2009, ye2010
+        - changed file names for ye2006.
+        - added Israeli Perl Workshop 2012 (ilpw2012) to list.
 
-1.04	27/11/2011
-	- added ye2011 & yn2011 results and images.
-	- added ppw2011 & gpw2011 results and images.
-	- revised index page to split yapcs, workshops and other survey events.
+1.05	2012-02-06
+        - added lpw2011 results and images
 
-1.03	10/10/2010
-	- added ye2010 & yn2010 results and images.
+1.04	2011-11-27
+        - added ye2011 & yn2011 results and images.
+        - added ppw2011 & gpw2011 results and images.
+        - revised index page to split yapcs, workshops and other survey events.
 
-1.02	27/09/2009
-	- added ye2009 results and images
+1.03	2010-10-10
+        - added ye2010 & yn2010 results and images.
 
-1.01	20/09/2009
-	- added yn2009 results and images
+1.02	2009-09-27
+        - added ye2009 results and images
 
-1.00	00/00/2008
-	- First site version created by Barbie
+1.01	2009-09-20
+        - added yn2009 results and images
+
+1.00	2008-00-00
+        - First site version created by Barbie

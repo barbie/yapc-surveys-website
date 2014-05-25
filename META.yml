@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                surveys
-version:             1.01
+version:             1.02
 abstract:            YAPC Conference Surveys
 license:             ~
 author:              

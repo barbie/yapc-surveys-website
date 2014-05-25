@@ -1,7 +1,7 @@
 use ExtUtils::MakeMaker;
 WriteMakefile(
     NAME           	=> 'surveys',
-    VERSION		   	=> '1.05',
+    VERSION		   	=> '1.06',
     PREREQ_PM      	=> {
     },
     ($] >= 5.005 ?

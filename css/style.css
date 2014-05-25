@@ -231,7 +231,7 @@ table {
 	border-spacing: 2px;
 	border-collapse: collapse;
 	empty-cells:show;
-	margin:5px 10px 5px 10px;
+	margin: 0px 0px 5px 10px;
 }
 
 tr {
@@ -385,25 +385,26 @@ div#commentBlock {
 #tabset1 {
     display: block;
     overflow: auto;
+    margin-bottom: 0px;
 }
 
 #tabset2 {
     margin:0;
-    padding: 5px 5px 0 5px;
+    padding: 5px 5px 0px 5px;
     font-size: 1em;
     line-height:2em;
 }
 
 #tabset2 ul {
     margin:0;
-    padding:0 0 0 0px;
+    padding:0 0 0 0;
     list-style:none;
 }
 
 #tabset2 li {
     float:left;
     margin:0;
-    padding: 0 0px 0 0;
+    padding: 0 0 0 0;
     list-style:none;
     width: 120px;
     text-align: center;
@@ -440,9 +441,11 @@ div#commentBlock {
 #tabset2 a:hover { background-color: #333; color: #fff; }
 .viewblock  {}
 
-.tabbody    { padding-top: 0px; margin-top: 0px; }
+#tabbody    { padding-top: 0px; margin-top: 0px; }
 
 div#tab1    { display: block; }
 div#tab2    { display: none; }
 div#tab3    { display: none; }
 div#tab4    { display: none; }
+
+.clear      { clear: both }
